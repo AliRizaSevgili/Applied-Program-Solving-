@@ -1,0 +1,77 @@
+1.Start check out process
+2.Declairing variables
+ - price 
+ - barcode
+ - tax
+ - prodId
+ - type (perishable, no perishable)
+ - total
+ - count
+ - sub_total
+ - finaltotal = 0;
+ 
+3.Declare external interface
+ - productInfo
+
+4.Product look up
+5. Is the item is perishable or non-perishable?
+
+-> Perishable:
+   - Display all perishable products with names and pictures (sorted by name, a-z) and prompt a keyboard on the monitor.
+   - Filter the mismatched items when the customer enters the item name, and displays the match results. 
+   - The customer selects the specific item they wish to purchase and obtains the item's information from the inventory database.
+   - Display the item information (by qty or weight) and the unit price 
+   -If the price of the item calculated by quantity or not?
+   -Yes => Display "Please enter the quantity", 
+    -Getting input from the customer and assigning to 'item_Qty'
+   -No  => Display "Please put the items on the scanning scale"
+   -Scanning the weight of the items and assigning them to 'item_Weight' 
+   -Send all variable to shopping cart
+
+-> Non perishable:
+   - Check valid barcode
+   - If the barcode is not valid prompt input to productId manualy
+      -If the productId is not found throw error: "Product no found"
+   - If the barcode is valid returns price,type and tax
+   - Send all variables to shopping cart
+6.Ask: do you want to scan more items?
+   - Yes -> go to step 4
+   - No -> go to step 7
+7.Do you want to delete anything from your shopping cart ?"
+  a-Yes => Select 'Delete' button for each items to delete from your shopping cart.
+  b-No  => Moving forward for the next step
+
+8. Pull up nonPerishableList
+9. Any unique entries? 
+    9a. YES: Take one unique entry (unique product) and multiply its price and tax. (itemPrice * tax = ___SubTotal)
+    9b. NO: Skip to step 11.
+
+10.Send the unique entry (itemName, ___Price, ___SubTotal) to itemReceipt. Go back to step 9.
+
+11.Pull up itemReceipt
+
+12. Any unique entries without a ___SubTotal variable? 
+    12A. YES: Create ___SubTotal variable that is = to ___Price (___Price = ___SubTotal)
+    12B. NO: Proceed to step 13.
+
+ 
+13. Add up all ___SubTotal variables in itemReceipt = finalTotal variable
+
+ 
+14. List unique entries in itemReceipt
+
+15. Prompt for payment (finalTotal) from customer
+
+16. Process Payment (Black Box)
+
+17. Payment completed. Print out itemReceipt.
+
+18. End.
+
+
+
+
+
+
+
+

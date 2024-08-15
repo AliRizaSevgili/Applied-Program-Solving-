@@ -1,0 +1,35 @@
+1. Start 
+
+2. Declare all the variables:
+total_Cost, sub_Total, total_Base, total_Finish,                          
+number_Base_Can, number_Finish_Can, 
+price_Base, price_Finish, 
+tax_Rate, TAXE,
+
+3. Assigning the related variables:
+ -the can number of base paint as number_Base_Can;
+ -the can number of finishing paint as number_Finish_Can;
+ -the tax rate to tax_Rate = 13%;  
+ -the base paint price to price_Base = $46.25 per can;  
+ -the finishing paint price to price_Finish = $54.50 per can;
+
+4. Calculation and display the output for the sub_Total, total_Base, and total_Finish for the cost of base paint, and the cost of finishing paint before tax. 
+    
+ a-total_Base = price_Base * number_Base_Can;       
+  aa-Display Total Base: total_Base    
+ 
+ b-total_Finish = price_Finish * number_Finish_Can;      
+  aa-Display Total Finish: total_Finish     
+
+ c-sub_Total = total_Base + total_Finish; 
+  aa-Display Sub-Total: sub_Total
+
+5. Calculation for the tax and display output.
+  a-TAXE = sub_Total * tax_Rate;
+   aa-Display Tax: TAXE
+
+6. Calculation of the total cost.
+  a-total_Cost = sub_Total + TAXE
+   aa-Display Total Cost: total_Cost
+
+7. End

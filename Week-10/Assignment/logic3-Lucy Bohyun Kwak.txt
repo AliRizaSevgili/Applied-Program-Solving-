@@ -1,0 +1,55 @@
+1. Start
+
+2. Variables: tax = 0.13. 
+	      ___Price = found in logic 1 and 2
+	      ___Name = to be declared
+	      ___Type = to be declared
+	      ___SubTotal = to be declared
+	      finalTotal = 0; 
+
+3. Obtain list of perishable and non-perishable items (from Logic 1 and 2). 
+
+4. Unique item?
+	4A. YES: Create unique variables using product name: ___Price, ___Name, ___Type. 
+		4Ai. Proceed to step 5. 
+	4B. NO: Skip to step 6. 
+
+5. Non-Perishable item?
+	5A. YES: Taxed. ___Name, ___Price, and send to nonPerishableList
+		5Ai. Go back to step 4.  
+	5B. NO: No tax added. ___Name, ___Price, and send to itemReceipt
+		5Bi. Go back to step 4. 
+
+6. Pull up nonPerishableList
+
+7. Any unique entries? 
+	7A. YES: Take one unique entry (___Name, ___Price) and multiply ___Price and tax. (___Price * tax = ___SubTotal)
+	7B. NO: Skip to step 9. 
+
+8. Send unique entry (___Name, ___Price, ___SubTotal) to itemReceipt. Go back to step 7.
+
+9. Pull up itemReceipt
+
+10. Any unique entries without a ___SubTotal variable? 
+	10A. YES: Create ___SubTotal variable that is = to ___Price (___Price = ___SubTotal)
+	10B. NO: Proceed to step 11. 
+
+11. Add up all ___SubTotal variables in itemReceipt = finalTotal variable
+
+12. List unique entries in itemReceipt
+
+13. Prompt for payment (finalTotal) from customer
+
+14. Process Payment (Black Box) 
+
+15. Payment completed. Print out itemReceipt. 
+
+16. End. 
+
+
+
+
+
+
+
+

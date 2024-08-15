@@ -1,0 +1,45 @@
+1. Start 
+
+2. Two players (Human & computer). 
+
+3. Explain rules of the game. 
+
+4. Display different objects (play) that can be selected for the game. Human player and computer player to choose one. 
+	4A. Rock 
+	4B. Paper
+	4C. Scissors
+
+5. Computer assigns rock, paper, and scissors a number to each object. Human player skips this step. 
+	5A. 1 - rock. Skip to step 6. 
+	5B. 2 - paper. Skip to step 6. 
+	5C. 3 - scissors. Continue to step 6. 
+
+6. Computer calls on "random" function to select a random number (1 - 3) so that computer player can select a play (object) at random. Human player skips this step. 
+
+7. Store results of step 6 into computer memory. 
+
+8. Countdown = 3 
+
+9. Animated countdown plays/continues playing. 
+	8A. Did human select object and input?
+		8Ai. YES: Game continues. Skip to step 10. 
+		8Aii. NO: Human must input an object (play). Go back to step 4. 
+
+10. Countdown = 0?
+	10A. YES: Reveal play (object) selected in step 6 to human player. Human player's input revealed to computer player. 
+	10B. NO: Countdown = Countdown - 1. Show animation of fist going up and down once. Repeat step 9.
+
+11. Figure out who won the game.  
+	11A. If computerHit = Rock and humanHit = Paper, Human wins. Skip to step 4
+	11B. If computerHit = Rock and humanHit = Scissors, Computer wins. Skip to step 4
+	11C. If computerHit = Rock and humanHit = Rock, declare Tie, go back to step 4. 
+	11D. If computerHit = Paper and humanHit = Rock, Computer wins. Skip to step 4
+	11E. If computerHit = Paper and humanHit = Scissors, Human wins. Skip to step 4
+	11F. If computerHit = Paper and humanHit = Paper, declare Tie, go back to step 4. 
+	11G. If computerHit = Scissors and humanHit = Paper, Computer wins. Skip to step 4
+	11H. If computerHit = Scissors and humanHit = Rock, Human wins. Skip to step 4
+	11I. If computerHit = Scissors and humanHit = Scissors, declare Tie, go back to step 4
+	
+12. Declare winner. 
+
+13. End. 

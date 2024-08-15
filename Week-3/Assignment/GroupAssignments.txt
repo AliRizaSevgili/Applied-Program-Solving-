@@ -1,0 +1,105 @@
+Start
+
+1. Precipitation Accumulation
+   a) Snow:
+      - Accumulation amount per hour (cm)
+      - The temperature in degrees Celsius
+      - Weather conditions and necessary data (input => output)
+      
+      a.1) Accumulation amount <= 2.0 cm
+         - Temperature < -15.0
+            - Dispatch 1 (light) sand truck
+         - Temperature between -15.0 and -7.0
+            - Dispatch 1 (light) salt truck
+         - Temperature > -7.0
+            - No Action Required
+      
+      a.2) Accumulation amount > 2.0 - 5.75 cm
+         - Temperature < -15.0
+            - Dispatch 1 (normal) sand truck
+         - Temperature between -15.0 and -7.0
+            - Dispatch 1 (normal) salt truck
+         - Temperature > -7.0
+            - No Action Required
+      
+      a.3) Accumulation amount > 5.75 - 15.5 cm
+         - Temperature < -15.0
+            - Dispatch 1 plow truck and 1 (normal) sand truck
+         - Temperature between -15.0 and -7.0
+            - Dispatch 1 plow truck and 1 (normal) salt truck
+         - Temperature > -7.0
+            - Dispatch 1 plow truck
+      
+      a.4) Accumulation amount > 15.5 - 42.5 cm
+         - Temperature < -15.0
+            - Dispatch 2 plow trucks and 1 (normal) sand truck
+         - Temperature between -15.0 and -7.0
+            - Dispatch 2 plow trucks and 1 (normal) salt truck
+         - Temperature > -7.0
+            - Dispatch 2 plow trucks
+      a.5)  Accumulation amount > 42.5 cm
+         - State of emergency (Organize army and other jurisdiction support
+      
+   
+   b) Ice Weather
+      - Accumulation amount per hour (cm)
+      - Temperature in degrees Celsius
+      - Weather conditions and necessary resources required
+      
+      b.1) Accumulation amount <= 3.0mm
+         - No action required
+      
+      b.2) Accumulation amount > 3.0 - 5.75 mm
+         - Temperature < 15.0
+            - Dispatch 1 normal sand truck
+         - Temperature between 15 to -7.0
+            - Dispatch 1 normal salt truck
+         - Temperature > 7.0
+            - No Action Required
+      
+      b.3) Accumulation amount > 5.5 - 17.0mm
+         - Temperature < 15.0
+            - 2 heavy sand truck
+         - Temperature between 15.0 and -7.0
+            - Dispatch 2 heavy salt truck
+         - Temperature > 7.0
+            - Dispatch 1 heavy salt truck
+      
+      b.4) Accumulation amount > 17mm
+         - State of emergency (Organize army and other jurisdiction support
+c) Mixed Weather
+      - Accumulation amount per hour (cm)
+      - Temperature in degrees Celsius
+      - Weather conditions and necessary resources required
+      
+      c.1) Accumulation amount <= 3.5 cm
+         - No action required
+      
+      c.2) Accumulation amount > 3.5 - 5.75 cm
+         - Temperature < 15.0
+            - Dispatch 1 plow truck and 1 light sand truck
+         - Temperature between 15.0 and -7.0
+            - Dispatch 1 plow truck and 1 light salt truck
+         - Temperature > 7.0
+            - Dispatch 1 plow truck
+      
+      b.3) Accumulation amount > 3.5 - 16.5 cm
+         - Temperature < 15.0
+            - Dispatch 1 plow truck and 1 heavy sand truck
+         - Temperature between 15.0 and -7.0
+            - Dispatch 1 plow truck and 1 heavy salt truck
+         - Temperature > 7.0
+            - Dispatch 1 plow truck and 1 normal salt truck
+      
+      b.4) Accumulation amount > 16.5 - 40 cm
+         - Temperature < 15.0
+            - Dispatch 2 plow trucks and 1 heavy sand truck
+         - Temperature between 15.0 and -7.0
+            - Dispatch 2 plow trucks and 1 heavy salt truck
+         - Temperature > 7.0
+            - Dispatch 2 plow trucks and 1 light salt truck
+      
+      b.5) Accumulation amount > 40 cm
+         - State of emergency (Organize army and other jurisdiction support
+  
+End    

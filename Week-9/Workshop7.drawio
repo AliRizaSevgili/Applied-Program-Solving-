@@ -1,0 +1,266 @@
+<mxfile host="app.diagrams.net" modified="2023-07-06T22:16:08.812Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0" etag="Ue6gT_dUEbv9VimuqSa8" version="21.6.1" type="device">
+  <diagram name="Page-1" id="ruNNgEVYpjEczLdeXEd0">
+    <mxGraphModel dx="1290" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="120" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="inKXGhZdDJIHJpYJJdYb-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="250" as="sourcePoint" />
+            <mxPoint x="385" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-3" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;pre&gt;&lt;font size=&quot;3&quot;&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Vehicle approaches&lt;br&gt;the kiosk station&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="320" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="382" y="380" as="sourcePoint" />
+            <mxPoint x="382" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-5" value="&lt;br&gt;&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Scan the vehicle via&lt;br&gt;stick-on barcode chip&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="480" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="540" as="sourcePoint" />
+            <mxPoint x="380" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-9" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;If stick-on chip &lt;br&gt;detected and &lt;br&gt;read successfully&lt;/code&gt;&lt;/pre&gt;" style="rhombus;whiteSpace=wrap;html=1;direction=south;" parent="1" vertex="1">
+          <mxGeometry x="307.5" y="640" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-10" value="YES" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="307.5" y="704.5" as="sourcePoint" />
+            <mxPoint x="207.5" y="704.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-18" value="NO" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="inKXGhZdDJIHJpYJJdYb-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="750" as="sourcePoint" />
+            <mxPoint x="570" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-19" value="NO" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="760" as="sourcePoint" />
+            <mxPoint x="570" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-20" value="NO" style="endArrow=classic;html=1;rounded=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="760" as="sourcePoint" />
+            <mxPoint x="660" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-22" value="NO" style="endArrow=classic;html=1;rounded=0;entryX=0.16;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-64" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="700" as="sourcePoint" />
+            <mxPoint x="522.2" y="836.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-23" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;pre&gt;&lt;font size=&quot;3&quot;&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Display error message: &lt;br&gt;Member not found&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="840" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-24" value="&lt;br&gt;&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt; Retrieve membership &lt;br&gt; information&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="840" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-25" value="YES" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="710" as="sourcePoint" />
+            <mxPoint x="210" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-26" value="&lt;br&gt;&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;  Display member details &lt;br&gt;and options&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="128" y="960" width="152" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-27" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="900" as="sourcePoint" />
+            <mxPoint x="200" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-29" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt; Prompt for &lt;br&gt;wash option selection&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1070" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-30" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="1020" as="sourcePoint" />
+            <mxPoint x="200" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-29" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="1100" as="sourcePoint" />
+            <mxPoint x="250" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-32" value="The member selects car wash option" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1200" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.442;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-32" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="345" y="1130" as="sourcePoint" />
+            <mxPoint x="395" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-34" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="349.5" y="1260" as="sourcePoint" />
+            <mxPoint x="350" y="1320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-35" value="Check the daily limit of car wash for the member " style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1320" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-36" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="349.5" y="1380" as="sourcePoint" />
+            <mxPoint x="350" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-37" value="If remaning limit &amp;gt;0" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="295" y="1480" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-38" value="YES" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="1590" as="sourcePoint" />
+            <mxPoint x="270" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-39" value="NO" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="1590" as="sourcePoint" />
+            <mxPoint x="410" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-41" value="Display: &quot;There is no available daily limit.&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="345" y="1680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-42" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Display:&lt;br&gt;&quot;No payment required&quot;&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1680" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-43" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="1740" as="sourcePoint" />
+            <mxPoint x="400" y="1840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-44" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Calculate regular rate &lt;br&gt;for&lt;br&gt; the selected wash option&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="313.75" y="1840" width="182.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-45" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Generate receipt with &lt;br&gt;regular rate charges&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="1960" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-46" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.463;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-45" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="407.5" y="1900" as="sourcePoint" />
+            <mxPoint x="457.5" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-47" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="1740" as="sourcePoint" />
+            <mxPoint x="200" y="1810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-48" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Generate receipt &lt;br&gt;without any charges&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="1810" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-49" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Calculate regular rate &lt;br&gt;for&lt;br&gt; the selected wash option&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="663.75" y="1260" width="182.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-50" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Generate receipt with &lt;br&gt;regular rate charges&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="663.75" y="1400" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-52" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.429;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-56" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="910" as="sourcePoint" />
+            <mxPoint x="760" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-56" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt; Prompt for &lt;br&gt;wash option selection&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="1000" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-57" value="Getting input for car wash option from the customer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="1140" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-58" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.567;entryY=0.017;entryDx=0;entryDy=0;exitX=0.45;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="inKXGhZdDJIHJpYJJdYb-56" target="inKXGhZdDJIHJpYJJdYb-57" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="1060" as="sourcePoint" />
+            <mxPoint x="820" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-62" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.556;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="inKXGhZdDJIHJpYJJdYb-57" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="1200" as="sourcePoint" />
+            <mxPoint x="760" y="1260" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-63" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-50" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="1320" as="sourcePoint" />
+            <mxPoint x="810" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-64" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;Display error message: &lt;br&gt;Stick-on chip not detected or &lt;br&gt;read failed&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="580" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-65" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="510" as="sourcePoint" />
+            <mxPoint x="783.75" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-66" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="620" as="sourcePoint" />
+            <mxPoint x="870" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-67" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-64" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="620" as="sourcePoint" />
+            <mxPoint x="920" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-68" value="EXIT" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="2160" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-70" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.4;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-68" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="407.5" y="2020" as="sourcePoint" />
+            <mxPoint x="457.5" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-71" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="1460" as="sourcePoint" />
+            <mxPoint x="760" y="2200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inKXGhZdDJIHJpYJJdYb-72" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.988;entryY=0.315;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="inKXGhZdDJIHJpYJJdYb-68" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="2200" as="sourcePoint" />
+            <mxPoint x="810" y="2150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O4_OShe1gwIq4-GNg3Xd-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.024;entryY=0.446;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="inKXGhZdDJIHJpYJJdYb-68">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="1870" as="sourcePoint" />
+            <mxPoint x="250" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,70 @@
+1-START
+
+2-Declaring variables:
+-total_Price 
+-sub_Total
+
+3-Display "Start" button on the screen
+
+4-Does the customer touch the start button?
+a-Yes => Moving forward to the next step
+b-No  => Go back to the step-3
+
+5-Display two buttons "Please scan the bar code" and "Search for perishable item" on the screen.
+
+6-If the customer selects  "Search for perishable item" button or not?
+a-Yes => Applying  subprocess_Perishable() and assign to each subTotal (Black Box)
+b-No  => Moving forward to the next step (White Box)
+
+7-Display "Press proceed to check out" button
+
+8- If total_Price == 0 or not ?
+a-Yes => Display "Please scan or search item" and going to back to the step-5
+b-No  => Applying subprocess_Pay ()
+
+9-Display "Do you want to delete anything from your shopping cart ?"
+a-Yes => Select 'Delete' button for each items to delete from your shopping cart.
+b-No  => Finish the payment process.
+
+10-Print out the recipe
+
+11-END
+
+subprocess_Perishable() for (Black Box)
+
+1-START
+
+2-Declaring variables:
+-item_Weight
+-item_Qty
+-sub_ItemPrice
+
+3-Display all perishable products with names and pictures (sorted by name, a-z) and prompt a keyboard on the monitor.
+
+4-Filter the mismatched items when the customer enters the item name, and displays the match results. 
+
+5-The customer selects the specific item they wish to purchase and obtains the item's information from the inventory database.
+
+6-Display the item information including the price calculation (by qty or 
+weight) and the unit price 
+
+7-If the price of the item calculated by quantity or not?
+a-Yes => Display "Please enter the quantity", 
+aa-Getting input from the customer and assigning to 'item_Qty'
+b-No  => Display "Please put the items on the scanning scale"
+ba-Scanning the weight of the items and assigning them to 'item_Weight'
+
+8-Calculation:
+-sub_ItemPrice = item_Qty * item unit price;
+-sub_ItemPrice = item_Weight * item unit price;
+
+9-List the details of the products that have been placed in your shopping cart.
+
+10-Display "Are you want to search for more perishable items?"
+  a-Yes => Select "Search more" button => going back to the step-3 
+  B)No  => Select "Finish" button.
+
+11-Return the item information and return each sub_ItemPrice 
+
+12-END
+

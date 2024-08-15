@@ -1,0 +1,47 @@
+PSEUDOCODE
+
+1-Snow
+2-Accumulation amount per hour (cm)
+3-The temperature in degrees Celcius
+4-Weather conditions and necessary data (input => output)
+
+a) Accumulation amount <= 2.0 cm
+a1) Temperature < -15.0
+-Dispatch 1 (light) of sand trucks
+a2) Temperature  -15.0 to -7.0
+-Dispatch 1 (light) of salt trucks
+a3) Temperature > -7.0
+-No Action Required
+
+b) Accumulation amount  >2.0 - 5.75 cm
+b1) Temperature < -15.0
+-Dispatch 1 (normal) of sand trucks
+b2) Temperature  -15.0 to -7.0
+-Dispatch 1 (normal) of salt trucks
+b3) Temperature > -7.0 
+-No Action Required
+
+c) Accumulation amount   >5.75 - 15.5 cm
+c1) Temperature < -15.0
+-Dispatch 1 of the plow trucks
+-Dispatch 1 (normal) of sand trucks
+c2)  Temperature  -15.0 to -7.0 
+-Dispatch 1 of the plow trucks
+-Dispatch 1 (normal) of salt trucks
+c3) Temperature > -7.0
+-Dispatch 1 of the plow trucks
+
+d) Accumulation amount   >15.5 - 42.5 cm
+d1)  Temperature < -15.0
+-Dispatch 2 plow trucks
+-Dispatch 1 (normal) of sand trucks
+d2) Temperature  -15.0 to -7.0
+-Dispatch 2 plow trucks
+-Dispatch 1 (normal) of salt trucks
+d3) Temperature > -7.0
+-Dispatch 2 plow trucks
+
+e) Accumulation amount   > 42.5 cm
+-State of emergency (Organize army and other jurisdiction support)
+
+6-End

@@ -1,0 +1,71 @@
+Product:					Transaction:
+
+slotID;						slotID;
+sku; 						quantity;
+quantity; 					price;
+maxQuantity; 					description;
+minQuantity;
+price; 
+description; 
+
+
+
+1-START
+
+2-Set slotID, sku, quantity, maxQuantity, minQuantity, price, description, for both product and transaction.
+
+3-Display "Please select the item(s): "
+
+4-Getting input from the customer
+
+a-If the customer select the 'Enter' button => continue;
+b-If the customer select the 'Correct' button => make the correct row/column for slotID
+c-If the customer select 'Cancel' button => go to step-13 for EXIT
+
+5-Read and specify input for slotID
+
+a-If slotID is invalid
+ -Display " invalid selection" 
+ -and go back to step-3 again
+
+b-If slotID is valid:
+ -Find the item by valid slotID
+
+6-Display "Please enter the quantity for item(s): "
+
+7-Getting input from the customer
+
+a-If the customer select the 'Enter' button => continue;
+b-If the customer select the 'Correct' button => make the correct quantity of products for the quantity
+c-If the customer select 'Cancel' button => go to step-13 for EXIT
+
+8-Read and specify input for quantity
+
+9-Check the stock for quantity according to maxQuantity and minQuantity
+
+a-If the quantity < minQuantity or the quantity > maxQuantity
+ -Display " invalid selection" 
+ -and go back to step-6 again
+
+b-If the quantity is sufficient :
+ -Find the item by valid quantity and move forward to the next step
+ 
+10-Display "Would you like to choose more item(s)? 
+
+a-If the customer select 'enter' button => go back to step-3 again
+b-If the customer select 'pay' button =>  move forward to the next step
+c-If the customer select 'Cancel' button => go to step-13 for EXIT
+
+11-Calculation for selected item(s)
+
+  a-Check the slotID 
+  b-Matching slotID and related price
+  c-Calculate (price*quantity) per item and calculate the final price
+ 
+12-Display "Transaction details: " with "Total Price: $"
+
+  a-If the customer select 'Cancel' button => go to step-13 for EXIT
+  b-If the customer select 'pay' button => move forward to the next step to end transaction
+
+13-EXIT
+

@@ -1,0 +1,158 @@
+1. Start 
+
+2. Declare all the variables:
+
+=>
+total_Cost, sub_Total, total_Base, total_Finish,                          
+number_Base_Can, number_Finish_Can, 
+price_Base, price_Finish, 
+tax_Rate, TAXE,
+
+=>
+totalareaPaintng, BaseCoatsCount;
+FinishingCoatsCount,BaseCoatsTotal;
+FinishingCoatsTotal;
+
+=>
+Room height = H
+Room width = W
+Room length = L
+Door length = dL
+Door height = dH
+totalDoorSize = 0; 
+numberOfDoors = 0
+totalWindowSize = 0; 
+numberOfWindows = 0;
+windowSize = 0; 
+surfaceArea = 0; 
+totalArea = 0; 
+count = 0; 
+doorCount = 0; 
+windowCount = 0;
+window length = wL
+window height = wH
+
+
+3. Prompt user to input number of rooms, input into variable: numberOfRooms
+
+4. count = 0;
+
+5. Is count >= numberOfRooms? 
+    5A. YES: Skip to step 15. 
+    5B. NO: Proceed to step 6.
+
+6. Start with the following formulas: 
+    surfaceArea = (L * W) + (L * H)(2) + (W * H)(2); 
+    totalDoorSize = numberOfDoors * (dL * dH); 
+    totalWindowSize = numberOfWindows * (wL * wH); 
+    totalArea = surfaceArea - totalDoorSize - totalWindowSize
+
+7. Prompt user to input L, W, and H of room.
+
+8. Populate surfaceArea with dimensions input from user.
+
+9. Calculate surfaceArea
+
+10. Ask user “Paint ceilings?”
+    A. YES: No change required to SA. Proceed to step 7.
+    B. NO: Update surfaceArea = (L * H)(2) + (W * H)(2). Proceed to step 11.
+
+11. Ask user “Are there any doors?” 
+    A. YES: Ask user “How many doors?”
+        a. Prompt user to input number of doors and store into numberOfDoors
+        b. doorCount = 0; 
+        c. Is doorCount >= numberOfDoors?
+            c1. YES: Send totalDoorSize to itemReceipt. Skip to step 12. 
+            c2. NO: Proceed to step 10Ad. 
+        d. Prompt user to input dimensions of door and store into dL and dH
+        e. Pull totalDoorSize formula and populate variables with user input
+        f. Calculate totalDoorSize = totalDoorSize + (dL * dH); 
+        g. doorCount++;
+        i. Go back to step 11Ac. 
+    B. NO: Send totalDoorSize = 0 to itemReceipt. Skip to step 12.
+
+ 
+12. Ask user “Are there any windows?”
+    A. YES: Ask user “How many windows?”
+        a. Prompt user to input number of windows and store into numberOfWindows
+        b. windowCount = 0; 
+        c. Is windowCount >= numberOfWindows?
+            c1. YES: Send totalWindowSize to itemReceipt. Skip to step 13.
+            c2. NO: Proceed to step 13Ad. 
+        d. Prompt user to input dimensions of windows and store into wL and wH
+        e. Pull totalWindowSize formula and populate variables with user input
+        f. Calculate totalWindowSize = totalWindowSize + (wL x wH)
+        g. windowCount++; 
+        h. Go back to step 11Ac.    .
+    B. NO: Send totalWindowSize = 0 to itemReceipt. Skip to step 13.
+
+ 
+13. totalArea = totalArea + (surfaceArea - totalDoorSize - totalWindowSize);
+
+14. count++;
+
+15. Go back to step 5.
+
+16. Output totalArea and send to itemReceipt
+
+ 
+17. Ask the client - Do you want Base paint?                                                
+    A. YES: ask the client how many coast => BaseCoatsCount*
+    B. NO: BaseCoatsCount = 0; Skip to step 18.
+
+ 
+18. Determine FinishingCoatsCount        
+    A. if BaseCoatsCount = 2;
+        a. FinishingCoatsCount = 1 (need);
+    B. if BaseCoatsCount = 1;
+        a. FinishingCoatsCount = 2 (need);
+    C.  if BaseCoatsCount = 0;
+        a. Does client want finishing coat?
+            a1. YES: FinishingCoatsCount = 3 (need);
+            a2. NO: FinishingCoatsTotal = 0; Skip to step 22.
+
+
+19. Are you satisfied with the number of coats?
+    A. YES: Skip to step 20. 
+    B. NO: Go back to step 18.
+
+
+20. Output total the number of coats for BasePaintingTotal:
+
+    => BaseCoatsTotal = BaseCoatsCount*(totalArea/11)
+
+
+21. Output total the number of coats for FinishingPaintingTotal:
+
+ 
+    A. if BaseCoatsCount = 2; => FinishingCoatsTotal = totalArea/16;
+    B. if BaseCoatsCount = 1; => FinishingCoatsTotal = 2*(totalArea/16);
+    C. if BaseCoatsCount = 0; => FinishingCoatsTotal = 3*(totalArea/16);
+
+22. Assigning the related variables:
+ -the can number of base paint as number_Base_Can;
+ -the can number of finishing paint as number_Finish_Can;
+ -the tax rate to tax_Rate = 13%;  
+ -the base paint price to price_Base = $46.25 per can;  
+ -the finishing paint price to price_Finish = $54.50 per can;
+
+23. Calculation and display the output for the sub_Total, total_Base, and total_Finish for the cost of base paint, and the cost of finishing paint before tax. 
+    
+ a-total_Base = price_Base * number_Base_Can;       
+  aa-Display Total Base: total_Base    
+ 
+ b-total_Finish = price_Finish * number_Finish_Can;      
+  aa-Display Total Finish: total_Finish     
+
+ c-sub_Total = total_Base + total_Finish; 
+  aa-Display Sub-Total: sub_Total
+
+24. Calculation for the tax and display output.
+  a-TAXE = sub_Total * tax_Rate;
+   aa-Display Tax: TAXE
+
+25. Calculation of the total cost.
+  a-total_Cost = sub_Total + TAXE
+   aa-Display Total Cost: total_Cost
+
+26. End

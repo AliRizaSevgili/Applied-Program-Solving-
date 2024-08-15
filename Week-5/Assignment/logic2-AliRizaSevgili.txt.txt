@@ -1,0 +1,131 @@
+Rock-Paper-Scissors Game 
+
+WELCOME
+
+1-Game START
+
+
+2-Two players (Human & Computer)
+
+
+3-Display a prompt to the human player screen
+a-Rock
+b-Paper
+c-Scissors
+
+
+4-Wait for getting input from the human player
+
+
+5-Animated countdown start (3 sec > 2 sec > 1 sec)
+
+a.) If the human player selected one of the options in the animated countdown
+	-Game continues 
+b.) If the human player has not selected anything for the game 
+	-Select one of the options such as Rock, Paper, Scissors
+
+
+6-Prompt in the screen selected options for players
+-the human player
+-the computer player
+
+7- Pop up the results of the choices for the first round
+
+
+8-Calculate who beat for the first round
+a.)If the human choice beats the computer choice
+	-Add +1 point for the human score
+b.)If the computer beats for the first round
+	-Add +1 point for the computer score
+c.)If both players choose the same choices, it's a tie, and the game must be repeated
+
+
+9-Display who won the first round or the game restart in case of a tie
+a.)If one of the players beats display who won the first round
+b.) If there is a tie, display => '' Game Restart''
+
+
+10-Display a prompt to the human player screen
+a-Rock
+b-Paper
+c-Scissors
+
+
+11-Wait for getting input from the human player
+
+
+12-Animated countdown start (3 sec > 2 sec > 1 sec)
+a.) If the human player selected one of the options in the animated countdown
+	-Game continues 
+b.) If the human player has not selected anything for the game 
+	-Select one of the options such as Rock, Paper, Scissors
+
+
+13-Prompt in the screen selected options for players
+-the human player
+-the computer player
+
+
+14-Pop up the results of the choices for the second round
+
+
+15-Calculate who beat for the second round
+a.)If the human choice beats the computer choice
+	-Add +1 point for the human score
+b.)If the computer beats for the first round
+	-Add +1 point for the computer score
+c.)If both players choose the same choices, it's a tie, and the game must be repeated
+
+
+16-Display who won the second round or the game restart in case of a tie
+a.)If one of the players beats display who won the second round
+b.) If there is a tie, display => '' Game Restart''
+
+
+
+17-Display a prompt to the human player screen
+a-Rock
+b-Paper
+c-Scissors
+
+
+18-Wait for getting input from the human player
+
+
+19-Animated countdown start (3 sec > 2 sec > 1 sec)
+a.) If the human player selected one of the options in the animated countdown
+	-Game continues 
+b.) If the human player has not selected anything for the game 
+	-Select one of the options such as Rock, Paper, Scissors
+
+
+20-Prompt in the screen selected options for players;
+-the human player
+-the computer player
+
+
+21-Pop up the results of the choices for the third round
+
+
+22-Calculate who beat for the second round
+a.)If the human choice beats the computer choice
+	-Add +1 point for the human score
+b.)If the computer beats for the first round
+	-Add +1 point for the computer score
+c.)If both players choose the same choices, it's a tie, and the game must be repeated
+
+
+23-Display who won the third round or the game restart in case of a tie
+a.)If one of the players beats display who won third the round
+b.) If there is a tie, display => '' Game Restart''
+
+
+24-Prompt the human player's screen to get input on whether wants to start a new game or not.
+a.)If it is 'YES' => New Game Start => go back to 3. section
+b.)If it is 'NO' => Game End
+ba.)Display the final score and declare a winner
+c.)If there is no selected choice 
+ca.)Animated countdown start (3 sec > 2 sec > 1 sec)
+
+25- END
+

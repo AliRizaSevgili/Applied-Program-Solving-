@@ -1,0 +1,119 @@
+Product:					Transaction:
+
+slotID;						slotID;
+sku; 						quantity;
+quantity; 					price;
+maxQuantity; 					description;
+minQuantity;
+price; 
+description; 
+
+1-START
+
+2-Turn on the vending machine (power-on)
+
+3-Machine is now in an Idle/Ready state for waiting for the customers
+ 
+ a: Hardware setup
+   -Enable  Display Screen (showing up "Please choose product")
+   -Enable the power button
+   -Disable Payment Module 
+   -Enable  Keypad (letter)
+   -Disable Keypad (Number)
+   -Disable Keypad (Enter)	
+   -Disable Dispenser   
+   -Disable Cancel/Correct
+  
+ b: Is the machine shutting down?
+       aa: Yes ==>> Go to End (Step 21)
+       bb: NO  ==>> Continue
+
+ c: Any letter button pressed?
+       aa: Yes ==>> Continue
+       bb: No  ==>> go back to the step3/b
+
+4-Activation of the machine (product selection
+  
+ a:  Hardware setup
+    -Enable  display screen
+    -Enable the power button
+    -Disable Payment Module 
+    -Enable  Keypad (letter)
+    -Enable  Keypad (Number)
+    -Enable  Keypad (Enter)	
+    -Disable Dispenser   
+    -Enable  Cancel/Correct
+
+5-Show the message "Please select an item(s):" on the display
+
+6-Ask for the slot ID (Which product? Select the row (button))
+
+7-The slotID is displayed after the customer enters the product's slotID on the keypad (a letter and a number between 1 and 9). 
+
+-Read and specify input for slotID
+
+a-If slotID is invalid
+ -Display " invalid selection" 
+ -and go back to step-3 again
+
+b-If slotID is valid:
+ -Find the item by valid slotID
+
+8-Display "Please enter the quantity for the item(s): "
+
+9-Getting input from the customer
+
+  a-If the customer selects the 'Enter' button => continue;
+  b-If the customer selects the 'Correct' button => make the correct quantity of products for the quantity
+  c-If the customer selects 'Cancel' button => go to step-13 for EXIT
+
+10-Calculation for selected item(s)
+
+  a-Check the slotID 
+  b-Matching slotID and related price
+  c-Calculate (price*quantity) per item and calculate the final price
+ 
+11-Display "Transaction details: " with "Total Price: $"
+
+  a-If the customer selects 'Cancel' button => go to step-13 for EXIT
+  b-If the customer selects 'pay' button => move forward to the next step to end the transaction
+
+12-Payment option?
+ 
+  a-Credit Card. Skip to step 7. 
+  b- Bank Card. Skip to
+  c- NFC Phone. Skip to 
+  d- Vending machine phone application. Skip to
+  e- Cash. Proceed to the next step 
+  f- Cancel. Skip to step 
+
+13-Advise "payment not accepted."
+
+14-Cancel session. Erase user's product selection/payment methods. and revert to idle/ready state. 
+
+15-Payment method is valid. Confirm with the customer to proceed with payment or cancel.
+ 
+ a-PROCEED WITH PAYMENT: Charge product price and proceed to step 16. 
+ b-CANCEL: Go back to step 14. 
+
+16-Successful Payment?
+ 
+ a-YES: Proceed
+ b-NO: Advise payment failed to user. Go back to step 12.
+
+17-Subtract 1 from the selected product's quantity in memory. 
+
+18-Did the selected product's quantity reach minQuantity?
+ 
+ a-YES: Notify the service provider to restock the selected product (providing slotID/sku and quantity) and proceed to the next step. 
+ b-NO : No action is required for inventory, proceed to the next step. 
+ 
+19-Dispense selected product to the user. 
+ 
+20-Delete user's product selection/payment methods to revert to Idle/ready state, to be used by the next user. 
+ 
+21-End of the session. 
+
+22- EXIT
+
+
